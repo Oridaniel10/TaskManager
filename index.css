@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;   
+     box-sizing: border-box;
+}
+/* style the all container*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg , #2e00f9 , #aab8a6);
+    padding: 20px;
+
+}
+
+.tasks
+{
+    width: 100%;
+    max-width: 650px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+/* style the caption*/
+.tasks h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* style the caption and the input */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+    /* style the input */
+input{
+flex: 1;
+border: none;
+outline: none;
+background: transparent;
+}
+
+    /* style the ADD button */
+.add{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+ol {
+    counter-reset: item;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    counter-increment: item;
+    margin-bottom: 10px;
+  }
+  
+  li::before {
+    content: counter(item) ".";
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  li#initial-task::before {
+    content: none; /* Remove the numbering */
+}
+
+
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+/* style the buttons of delte up and down*/
+.bt {
+  background-color: #002765;
+  border-radius: 40px;
+  padding: 8px 12px;
+  color: white;
+  margin-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+
+
+}
+
+.clear-all {
+  background-color: #220dbf;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+}
+
+h5{
+  margin-bottom: 20px;
+}
+
+h6{
+  margin-bottom: 20px;
+}
+

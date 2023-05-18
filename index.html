@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Ori Daniel</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="firsttaks()">
+    <div class="container">
+      <div class="tasks">
+        <div> 
+          <h2>Task Manager - Ori daniel</h2>
+        </div>
+        <div class="row">
+            <input type="text" id="inputbox" onkeypress="handleKeyPress(event)" placeholder="Add Your Tasks here...">
+            <button class="add" onclick="addtask()">Add</button>
+        </div>
+        <button class="clear-all" onclick="clearAllTasks()">Clear All Tasks</button>
+        <ol id="list-container">
+            <!-- Example task -->
+            <li id="initial-task" style="display: none;">
+              <div class="button-container">
+                  <button class="bt" onclick="deleteTask(this)">Delete</button>
+                  <button class="bt" onclick="clickeddown(this)">Down</button>
+                  <button class="bt" onclick="moveTaskUp(this)">Up</button>
+              </div>
+          </li>
+          </ol>
+      </div>
+      
+
+    </div>
+
+ 
+    <script src="indes.js"></script>
+</body>
+</html>
